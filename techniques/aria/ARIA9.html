@@ -44,13 +44,8 @@
             <h2>Applicability</h2>
             <p>Technologies that support <a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</a>. 
             </p>
-            <p>This technique relates to:</p>
-            <ul>
-               <li><a href="https://lepszyweb.github.io/wcag/understanding/non-text-content">Success Criterion 1.1.1: Non-text Content</a> (Sufficient)
-               </li>
-               <li><a href="https://lepszyweb.github.io/wcag/understanding/labels-or-instructions">Success Criterion 3.3.2: Labels or Instructions</a> (Sufficient as a way to meet <a href="../general/G131">G131: Providing descriptive labels</a>)
-               </li>
-            </ul>
+            <p>This technique relates to <span><a href="https://lepszyweb.github.io/wcag/understanding/non-text-content">Success Criterion 1.1.1: Non-text Content</a> (Sufficient)</span>.
+            </p>
          </section>
          <section id="description">
             <h2>Description</h2>
@@ -76,7 +71,7 @@
                into labels for the text input elements inside the table.
             </p>
             <div class="note">
-               <div role="heading" class="note-title marker" aria-level="3">Note</div>
+               <div role="heading" class="note-title marker" aria-level="3">Uwaga</div>
                <div>
                   
                   <p>The <a href="https://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">ARIA accessible name and description calculation</a> specifies that the string specified in <code class="att">aria-labelledby</code> should replace rather than add to the content of the element that carries the property.
@@ -102,7 +97,7 @@
                   (3) the string 'minutes' contained in a <code class="el">span</code>. These elements should be concatenated to provide the full label for the text input
                </p>
                <div class="note">
-                  <div role="heading" class="note-title marker" aria-level="4">Note</div>
+                  <div role="heading" class="note-title marker" aria-level="4">Uwaga</div>
                   <div>
                      
                      <p>The use of tabindex="-1" on the <code class="el">span</code> element is not meant to support focusing by scripts - here, it merely serves to ensure
