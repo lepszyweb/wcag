@@ -103,7 +103,7 @@
 			<xsl:otherwise>
 				<xsl:copy>
 					<xsl:apply-templates select="@*"/>
-					<xsl:text>IN DEVELOPMENT: </xsl:text>
+					<xsl:text>W OPRACOWANIU: </xsl:text>
 					<xsl:apply-templates/>
 				</xsl:copy>
 			</xsl:otherwise>
@@ -112,7 +112,7 @@
 	
 	<xsl:template match="html:p[@class = 'note'] | html:div[@class = 'note']">
 		<div class="note">
-			<div role="heading" class="note-title marker" aria-level="{count(ancestor::html:section) + 2}">Note</div>
+			<div role="heading" class="note-title marker" aria-level="{count(ancestor::html:section) + 2}">Uwaga</div>
 			<xsl:copy><xsl:apply-templates select="@*[not(name() = 'class')]|node()"/></xsl:copy>
 		</div>
 	</xsl:template>
@@ -121,7 +121,7 @@
 		<xsl:copy>
 			<xsl:apply-templates select="@*[not(name() = 'class')]"/>
 			<div class="note">
-				<div role="heading" class="note-title marker" aria-level="{count(ancestor::html:section) + 2}">Note</div>
+				<div role="heading" class="note-title marker" aria-level="{count(ancestor::html:section) + 2}">Uwaga</div>
 				<xsl:apply-templates/>
 			</div>
 		</xsl:copy>
@@ -139,7 +139,7 @@
 	
 	<xsl:template match="html:figure">
 		<xsl:if test="not(@id)">
-			<xsl:message terminate="yes">ID is required on figure: src=<xsl:value-of select="html:img/@src"/> in <xsl:value-of select="base-uri()"/></xsl:message>
+			<xsl:message terminate="yes">Wymagany jest identyfikator (id) dla figure: src=<xsl:value-of select="html:img/@src"/> w <xsl:value-of select="base-uri()"/></xsl:message>
 		</xsl:if>
 		<xsl:copy>
 			<xsl:apply-templates select="node()|@*"/>
@@ -168,7 +168,7 @@
 	
 	<xsl:template match="html:*[starts-with(@class, 'wcag')]">
 		<xsl:if test="not($guidelines.version)">
-			<xsl:message terminate="yes">Guidelines version not provided</xsl:message>
+			<xsl:message terminate="yes">Nie dostarczono wersji z wytycznymi</xsl:message>
 		</xsl:if>
 		<xsl:variable name="version" select="substring-after(@class, 'wcag')"/>
 		<xsl:choose>
@@ -180,7 +180,7 @@
 			<xsl:when test="$version = $guidelines.version">
 				<xsl:copy>
 					<xsl:apply-templates select="@*"/>
-					<xsl:text> </xsl:text><span class="new-version">New in WCAG <xsl:value-of select="$guidelines.version"/>: </span>
+					<xsl:text> </xsl:text><span class="new-version">Nowe w WCAG <xsl:value-of select="$guidelines.version"/>: </span>
 					<xsl:apply-templates/>
 				</xsl:copy>
 			</xsl:when>
