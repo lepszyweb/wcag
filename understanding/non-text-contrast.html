@@ -30,7 +30,7 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.11: Non-text Contrast</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://lepszyweb.github.io/wcag/guidelines/#non-text-contrast" style="font-weight: bold;">1.4.11 Non-text Contrast</a> (Level AA): The visual <a href="#">presentation</a> of the following have a <a href="#dfn-contrast-ratio">contrast ratio</a> of at least 3:1 against adjacent color(s):
+         <p>Success Criterion <a href="https://lepszyweb.github.io/wcag/guidelines/#non-text-contrast" style="font-weight: bold;">1.4.11 Non-text Contrast</a> (Level AA): The visual <a href="#">presentation</a> of the following have a <a href="#">contrast ratio</a> of at least 3:1 against adjacent color(s):
          </p>
          <dl>
             						
@@ -38,7 +38,7 @@
             <dt>User Interface Components</dt>
             						
             
-            <dd>Visual information required to identify <a href="#dfn-user-interface-component">user interface components</a> and <a href="#dfn-state">states</a>, except for inactive components or where the appearance of the component is determined
+            <dd>Visual information required to identify <a href="#">user interface components</a> and <a href="#dfn-stan">states</a>, except for inactive components or where the appearance of the component is determined
                by the user agent and not modified by the author;
             </dd>
             						
@@ -1112,153 +1112,19 @@
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
-            <dt id="dfn-contrast-ratio">contrast ratio</dt>
-            <dd>
-               <definition xmlns="">
-                  
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05), where</p>
-                  
-                  
-                  <ul xmlns="http://www.w3.org/1999/xhtml">
-                     
-                     
-                     <li>L1 is the <a href="#dfn-relative-luminance">relative luminance</a> of the lighter of the colors, and
-                        
-                     </li>
-                     
-                     
-                     <li>L2 is the <a href="#dfn-relative-luminance">relative luminance</a> of the darker of the colors.
-                        
-                     </li>
-                     
-                     
-                  </ul>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>Because authors do not have control over user settings as to how text is rendered
-                        (for example font smoothing or anti-aliasing), the contrast ratio for text can be
-                        evaluated with anti-aliasing turned off.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
-                        to the specified background over which the text is rendered in normal usage. If no
-                        background color is specified, then white is assumed.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>Background color is the specified color of content over which the text is to be rendered
-                        in normal usage. It is a failure if no background color is specified when the text
-                        color is specified, because the user's default background color is unknown and cannot
-                        be evaluated for sufficient contrast. For the same reason, it is a failure if no text
-                        color is specified when a background color is specified.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>When there is a border around the letter, the border can add contrast and would be
-                        used in calculating the contrast between the letter and its background. A narrow border
-                        around the letter would be used as the letter. A wide border around the letter that
-                        fills in the inner details of the letters acts as a halo and would be considered background.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>WCAG conformance should be evaluated for color pairs specified in the content that
-                        an author would expect to appear adjacent in typical presentation. Authors need not
-                        consider unusual presentations, such as color changes made by the user agent, except
-                        where caused by authors' code.
-                        
-                     </p>
-                  </div>
-                  
-                  
-               </definition>
-            </dd>
-            <dt id="dfn-state">state</dt>
+            <dt id="dfn-stan">stan</dt>
             <dd>
                <definition xmlns="">
                   					
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml">dynamic property expressing characteristics of a user interface component that may
-                     change in response to user action or automated processes
+                  <p xmlns="http://www.w3.org/1999/xhtml">cecha dynamiczna wyrażająca właściwości komponentu interfejsu użytkownika, która może
+                     ulec zmianie w odpowiedzi na działanie użytkownika lub zautomatyzowane procesy
                   </p>
                   	        
-                  <p xmlns="http://www.w3.org/1999/xhtml">States do not affect the nature of the component, but represent data associated with
-                     the component or user interaction possibilities. Examples include focus, hover, select,
-                     press, check, visited/unvisited, and expand/collapse.
+                  <p xmlns="http://www.w3.org/1999/xhtml">Stany nie mają wpływu na charakter elementu, ale reprezentują dane powiązane z tym
+                     komponentem lub możliwościami interakcji z użytkownikiem.<br />Przykłady obejmują fokus (skupienie), najechanie wskaźnikiem myszki, wybrany (zaznaczony),
+                     wciśnięty, sprawdzony, odwiedzony/nieodwiedzony oraz rozwinięty/zwinięty.
                   </p>
-                  
-               </definition>
-            </dd>
-            <dt id="dfn-user-interface-component">user interface component</dt>
-            <dd>
-               <definition xmlns="">
-                  
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                     function
-                     
-                  </p>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>Multiple user interface components may be implemented as a single programmatic element.
-                        Components here is not tied to programming techniques, but rather to what the user
-                        perceives as separate controls.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>User interface components include form elements and links as well as components generated
-                        by scripts.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>What is meant by "component" or "user interface component" here is also sometimes
-                        called "user interface element".
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
-                     or random access. Since each of these would need to have a name and be settable independently,
-                     they would each be a "user interface component."
-                     
-                  </p>
-                  
                   
                </definition>
             </dd>

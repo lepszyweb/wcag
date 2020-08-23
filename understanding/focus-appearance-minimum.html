@@ -35,7 +35,7 @@
          <ul>
             
             <li>
-               <strong>Minimum area:</strong> The <a href="#dfn-focus-indication-area">focus indication area</a> is greater than or equal to a 1 <a href="#dfn-css-pixel">CSS pixel</a> border of the focused control, or has a thickness of at least 8 CSS pixels along
+               <strong>Minimum area:</strong> The <a href="#dfn-focus-indication-area">focus indication area</a> is greater than or equal to a 1 <a href="#">CSS pixel</a> border of the focused control, or has a thickness of at least 8 CSS pixels along
                the shortest side of the element.
             </li>
             
@@ -147,7 +147,7 @@
                
                <div class="note">
                   <div role="heading" class="note-title marker" aria-level="4">Uwaga</div>
-                  <p>A <a href="#dfn-css-pixel">CSS pixel</a> is what developers use in CSS declarations like “width: 200px”, it is device-independent
+                  <p>A <a href="#">CSS pixel</a> is what developers use in CSS declarations like “width: 200px”, it is device-independent
                      and not to be confused with device pixels which vary depending on the physical pixel
                      density. <br />
                      The rest of this document notates CSS pixels as "px".
@@ -537,82 +537,15 @@
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
-            <dt id="dfn-css-pixel">css pixel</dt>
-            <dd>
-               <definition xmlns="">
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">visual angle of about 0.0213 degrees</p>
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.
-                     This unit is density-independent, and distinct from actual hardware pixels present
-                     in a display. User agents and operating systems should ensure that a CSS pixel is
-                     set as closely as possible to the <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [[!css3-values]], which takes into account the physical dimensions of the display
-                     and the assumed viewing distance (factors that cannot be determined by content authors).
-                     
-                  </p>
-                  				
-                  
-               </definition>
-            </dd>
             <dt id="dfn-focus-indication-area">focus indication area</dt>
             <dd>
                <definition xmlns="">
                   	        	
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml">the pixels that change between the focused and unfocused states of a <a href="#dfn-user-interface-component">User Interface Component</a>
+                  <p xmlns="http://www.w3.org/1999/xhtml">the pixels that change between the focused and unfocused states of a <a href="#">User Interface Component</a>
                      
                   </p>
                   				
-                  
-               </definition>
-            </dd>
-            <dt id="dfn-user-interface-component">user interface component</dt>
-            <dd>
-               <definition xmlns="">
-                  
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                     function
-                     
-                  </p>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>Multiple user interface components may be implemented as a single programmatic element.
-                        Components here is not tied to programming techniques, but rather to what the user
-                        perceives as separate controls.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>User interface components include form elements and links as well as components generated
-                        by scripts.
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                     <div role="heading" class="note-title marker" aria-level="2">Uwaga</div>
-                     <p>What is meant by "component" or "user interface component" here is also sometimes
-                        called "user interface element".
-                        
-                     </p>
-                  </div>
-                  
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
-                     or random access. Since each of these would need to have a name and be settable independently,
-                     they would each be a "user interface component."
-                     
-                  </p>
-                  
                   
                </definition>
             </dd>
