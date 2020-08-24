@@ -170,7 +170,7 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="default.id" select="'contents'"/>
           </xsl:call-template>
-          <xsl:text>Table of Contents</xsl:text>
+          <xsl:text>Spis treści</xsl:text>
         </h2>
         <ul class="toc">
           <xsl:choose>
@@ -178,8 +178,8 @@
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
             <xsl:otherwise>
-                <li><a href="#abstract">Abstract </a></li>
-            	<li><a href="#status">Status of This Document </a></li>
+                <li><a href="#abstract">Streszczenie </a></li>
+            	<li><a href="#status">Status dokumentu </a></li>
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
@@ -252,10 +252,10 @@
         <xsl:otherwise>
           <em><xsl:choose>
             <xsl:when test="$notenumber = '1'">
-              <xsl:text>Note: </xsl:text>
+              <xsl:text>Uwaga: </xsl:text>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:text>Note </xsl:text>
+              <xsl:text>Uwaga </xsl:text>
               <xsl:number count="p" format="1"/>:
 					</xsl:otherwise>
           </xsl:choose></em>
@@ -281,10 +281,10 @@
       </xsl:if>
       <em><xsl:choose>
         <xsl:when test="$exnumber = '1'">
-          <xsl:text>Example: </xsl:text>
+          <xsl:text>Przykład: </xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:text>Example </xsl:text>
+          <xsl:text>Przykład </xsl:text>
           <xsl:number count="p" format="1"/>:
 					</xsl:otherwise>
       </xsl:choose></em>
@@ -327,10 +327,10 @@
                   <a>
                     <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>
                     <xsl:choose>
-                      <xsl:when test="@id='perceivable'">1 Perceivable</xsl:when>
-                      <xsl:when test="@id='operable'">2 Operable</xsl:when>
-                      <xsl:when test="@id='understandable'">3 Understandable</xsl:when>
-                      <xsl:when test="@id='robust'">4 Robust</xsl:when>
+                      <xsl:when test="@id='perceivable'">1 Postrzegalność</xsl:when>
+                      <xsl:when test="@id='operable'">2 Funkcjonalność</xsl:when>
+                      <xsl:when test="@id='understandable'">3 Zrozumiałość</xsl:when>
+                      <xsl:when test="@id='robust'">4 Solidność</xsl:when>
                       <xsl:otherwise><xsl:apply-templates select="head" mode="text"/></xsl:otherwise>
                     </xsl:choose>
                     
@@ -373,7 +373,7 @@
         <xsl:apply-templates select="head" mode="text"/>
       </a>
       <xsl:if test="@role='normative'">
-        <xsl:text> (Normative)</xsl:text>
+        <xsl:text> (Normatywne)</xsl:text>
       </xsl:if>
     </li>
     <xsl:text> </xsl:text>
@@ -389,7 +389,7 @@
           <xsl:with-param name="conditional" select="0"/>
           <xsl:with-param name="default.id" select="'status'"/>
         </xsl:call-template>
-        <xsl:text>Status of This Document</xsl:text>
+        <xsl:text>Status dokumentu</xsl:text>
       </h2>
       <xsl:choose>
         <xsl:when test="/spec/@w3c-doctype='review'">

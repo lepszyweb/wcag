@@ -1816,12 +1816,11 @@
 					<xsl:with-param name="conditional" select="0"/>
 					<xsl:with-param name="default.id" select="'status'"/>
 				</xsl:call-template>
-				<xsl:text>Status of This Document</xsl:text>
+				<xsl:text>Status dokumentu</xsl:text>
 			</h2>
 			<xsl:if test="/spec/@role='editors-copy'">
 				<p>
-					<strong>This document is an editors' copy that has
-        no official standing.</strong>
+					<strong>Dokument ten jest kopią redakcyjną, która nie ma oficjalnego statusu.</strong>
 				</p>
 			</xsl:if>
 			<xsl:apply-templates/>
