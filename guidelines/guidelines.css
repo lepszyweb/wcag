@@ -56,7 +56,7 @@ span.screenreader {position: absolute; left: -10000px}
 	font-weight: bold;
 }
 
-p.note:before {
-    content: 'UWAGA: ';
-    margin-bottom: 1em;
-}
+div.transheader {
+  display: block;
+  border: solid #ccccbb; padding: 2%;
+  background: #eeeedd ;}
