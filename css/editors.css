@@ -1241,7 +1241,7 @@ body {}
     color: #333;
 }
 #meta h2:before {
-    content: 'Not published: ';
+    content: 'Nieopublikowane: ';
     font-style: italic;
 }
 #meta p:last-child {
@@ -1249,11 +1249,11 @@ body {}
 }
 
 p.note:before {
-    content: 'NOTE: ';
+    content: 'UWAGA: ';
     margin-bottom: 1em;
 }
 
 #examples .example h3:first-child:before {
-    content: 'Example X: ';
+    content: 'Przykład X: ';
     font-style: italic;
 }
