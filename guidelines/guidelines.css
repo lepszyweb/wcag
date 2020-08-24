@@ -55,3 +55,8 @@ span.screenreader {position: absolute; left: -10000px}
 .head p:not(.copyright) > a, .head > a:first-child {
 	font-weight: bold;
 }
+
+p.note:before {
+    content: 'UWAGA: ';
+    margin-bottom: 1em;
+}
