@@ -26,7 +26,7 @@
 	<xsl:template match="html:html">
 		<guidelines lang="{@lang}">
 			<understanding>
-				<name>Wprowdzenie do Zrozumienie WCAG 2.1</name>
+				<name>Wprowdzenie do Zrozumieć WCAG 2.1</name>
 				<file href="intro"/>
 			</understanding>
 			<understanding>
@@ -35,19 +35,19 @@
 			</understanding>
 			<xsl:apply-templates select="//html:section[@class='principle']"/>
 			<understanding>
-				<name>Zrozumienie zgodności</name>
+				<name>Zrozumieć zgodność</name>
 				<file href="conformance"/>
 			</understanding>
 			<understanding>
-				<name>How to Refer to WCAG 2.1 from Other Documents</name>
+				<name>Jak odnieść się do WCAG 2.1 z innych dokumentów</name>
 				<file href="refer-to-wcag"/>
 			</understanding>
 			<understanding>
-				<name>Documenting Accessibility Support for Uses of a Web Technology</name>
+				<name>Dokumentowanie obsługi dostepności dla zastosowań technologii internetowej</name>
 				<file href="documenting-accessibility-support"/>
 			</understanding>
 			<understanding>
-				<name>Zrozumienie dokumentu Metadata</name>
+				<name>Zrozumieć Metadata</name>
 				<file href="understanding-metadata"/>
 			</understanding>
 			<xsl:apply-templates select="//html:dfn"/>
