@@ -13,7 +13,7 @@ function linkUnderstanding() {
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("div");
 		el.setAttribute("class", "doclinks");
-		el.innerHTML = "<a href=\"" + understandingBaseURI + pathFrag + ".html\">Zrozumieć KS" + heading + "</a> <span class=\"screenreader\">|</span> <br /><a href=\"https://www.w3.org/WAI/WCAG" + version + "/quickref/#" + pathFrag + "\">Jak spełnić  KS" + heading + "</a>";
+		el.innerHTML = "<a href=\"" + understandingBaseURI + pathFrag + ".html\">Zrozumieć KS " + heading + "</a> <span class=\"screenreader\">|</span> <br /><a href=\"https://www.w3.org/WAI/WCAG" + version + "/quickref/#" + pathFrag + "\">Jak spełnić KS " + heading + "</a>";
 		node.insertBefore(el, node.children[1]);
 	})
 }
