@@ -58,5 +58,14 @@ span.screenreader {position: absolute; left: -10000px}
 
 div.transheader {
   display: block;
-  border: solid #ccccbb; padding: 2%;
-  background: #eeeedd ;}
+  border: 1px solid #f4d7ee; 
+  padding: 2%;
+  background: #faf5fa ;}
+h3.transtitle {
+	font-size: 180%;
+	margin-top:.5rem;
+}
+h3.transtitle2 {
+	font-size: 180%;
+	margin-top:1.5rem;
+}
