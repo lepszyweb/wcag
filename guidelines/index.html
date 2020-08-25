@@ -57,5 +57,887 @@
 
 
 
+
+        <h1 id="title" class="title p-name">Wytyczne dla dostępności treści internetowych (WCAG) 2.1</h1>
+
+        <h2 id="w3c-recommendation-05-june-2018"> Rekomendacja <abbr title="World Wide Web Consortium">W3C</abbr> <time class="dt-published" datetime="2018-06-05">5 czerwca 2018 r</time></h2>
+        <dl>
+          <dt>Niniejsza wersja:</dt><dd><a class="u-url" href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/">https://www.w3.org/TR/2018/REC-WCAG21-20180605/</a></dd>
+          <dt>Najnowsza wersja:</dt><dd><a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
+          <dt>Najnowszy projekt redakcyjny:</dt><dd><a href="https://w3c.github.io/wcag/21/guidelines/">https://w3c.github.io/wcag/21/guidelines/</a></dd>
+
+          <dt>Sprawozdanie z wdrożenia:</dt><dd><a href="https://www.w3.org/WAI/WCAG21/implementation-report/">https://www.w3.org/WAI/WCAG21/implementation-report/</a></dd>
+
+
+          <dt>Poprzednia wersja:</dt><dd><a href="https://www.w3.org/TR/2018/PR-WCAG21-20180424/">https://www.w3.org/TR/2018/PR-WCAG21-20180424/</a></dd>
+          <dt>Poprzednia Rekomendacja:</dt><dd><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/">https://www.w3.org/TR/2008/REC-WCAG20-20081211/</a></dd>
+          <dt>Redaktorzy:</dt>
+          <dd class="p-author h-card vcard" data-editor-id="39770"><a class="ed_mailto u-email email p-name" href="mailto:akirkpat@adobe.com">Andrew Kirkpatrick</a> (Adobe)</dd><dd class="p-author h-card vcard" data-editor-id="41218"><a class="ed_mailto u-email email p-name" href="mailto:josh@interaccess.ie">Joshue O Connor</a> (Invited Expert, InterAccess)</dd><dd class="p-author h-card vcard" data-editor-id="44689"><a class="ed_mailto u-email email p-name" href="mailto:acampbell@nomensa.com">Alastair Campbell</a> (Nomensa)</dd><dd class="p-author h-card vcard" data-editor-id="34017"><a class="ed_mailto u-email email p-name" href="mailto:cooper@w3.org">Michael Cooper</a> (<abbr title="World Wide Web Consortium">W3C</abbr>)</dd>
+          <dt>Redaktorzy WCAG 2.0 (do grudnia 2008):</dt><dd class="p-author h-card vcard" data-editor-id="33602"><span class="p-name fn">Ben Caldwell</span> (Trace R&amp;D Center, University of Wisconsin-Madison)</dd><dd class="p-author h-card vcard" data-editor-id="35436"><span class="p-name fn">Loretta Guarino Reid</span> (Google, Inc.)</dd><dd class="p-author h-card vcard" data-editor-id="3442"><span class="p-name fn">Gregg Vanderheiden</span> (Trace R&amp;D Center, University of Wisconsin-Madison)</dd><dd class="p-author h-card vcard" data-editor-id="4099"><span class="p-name fn">Wendy Chisholm</span> (<abbr title="World Wide Web Consortium">W3C</abbr>)</dd><dd class="p-author h-card vcard" data-editor-id="35537"><span class="p-name fn">John Slatin</span> (Accessibility Institute, University of Texas at Austin)</dd><dd class="p-author h-card vcard" data-editor-id="74028"><span class="p-name fn">Jason White</span> (University of Melbourne)</dd>
+
+
+          <dt>Tłumaczenie i redakcja polskiej wersji</dt>
+            <dd>Jacek Zadrożny, <a href="http://informaton.pl/">informaton.pl</a></dd>
+            <dd>Małgorzata Janicka, <a href="http://www.mpips.gov.pl/">Ministerstwo Pracy i Polityki Społecznej</a></dd>
+            <dd>Agnieszka Mikołajewska, <a href="http://www.sgh.edu.pl/">Szkoła Główna Handlowa</a></dd>
+            <dd>Dominik Paszkiewicz, <a href="http://dostepne.info">Dostepne.info</a></dd>
+
+        </dl>
+        <p>
+            W <a href="https://www.w3.org/WAI/WCAG21/errata/"><strong>erracie</strong></a> do poniższego dokumentu mogą znajdować się normatywne poprawki.
+          </p>
+
+        <p>Tutaj znajdują się <a href="https://www.w3.org/WAI/standards-guidelines/wcag/translations/">
+            <strong>tłumaczenia dokumentu</strong></a>.
+          </p>
+
+          	<p>Niniejszy dokument jest również dostępny w formatach nienormatywnych, na stronie <a href="https://www.w3.org/WAI/WCAG21/versions/">Alternate Versions of Web Content Accessibility Guidelines 2.1</a>.</p>
+
+        <p class="copyright">
+              <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+              2017-2018
+
+              <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+              (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+              <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+              <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>).
+              , wszelkie prawa zastrzeżone. Obowiązują zasady
+              <abbr title="World Wide Web Consortium">W3C</abbr> dotyczące <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">odpowiedzialności</a>,
+              <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">znaku towarowego</a> oraz
+              <a rel="license" href="https://www.w3.org/Consortium/Legal/copyright-documents">wykorzystania dokumentu</a>.
+            </p>
+
+
+
+
+
+    <section id="abstract" class="introductory">
+      <h2 id="abstract-0">Streszczenie</h2>
+      <p>„Wytyczne dla dostępności internetowej (WCAG) 2.1” obejmują szeroki wachlarz zaleceń dotyczących zwiększenia dostępności treści internetowych. Wdrożenie tych wytycznych sprawi, że treści będą bardziej dostępne dla szerszego grona osób z niepełnosprawnościami, w tym dla osób niewidomych i słabowidzących, głuchych i niedosłyszących, osób z niepełnosprawnością ruchową, z zaburzeniami mowy, nadwrażliwością na światło, osób z niepełnosprawnościami złożonymi, a także dla niektórych osób mających trudności w uczeniu się i ograniczenia poznawcze; ale nie zaspokoi potrzeb każdego użytkownika z niepełnosprawnością. Niniejsze wytyczne dotyczą dostępności treści internetowych na komputerach stacjonarnych, laptopach, tabletach i urządzeniach przenośnych. Wprowadzenie wytycznych w życie, sprawi również, że treści internetowe będą często bardziej użyteczne dla użytkowników w ogóle.</p>
+      <p>Kryteria sukcesu WCAG 2.1 są formułowane jako twierdzenia możliwe do zweryfikowania i niepowiązane z konkretną technologią. Wytyczne dotyczące spełnienia kryteriów sukcesu dla konkretnych technologii, jak również ogólne informacje dotyczące interpretacji kryteriów sukcesu zawarte są w osobnych dokumentach. Więcej na ten temat przeczytać można w <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" hreflang="en" lang="en">Web Content Accessibility Guidelines (WCAG)</a> (Omówienie Wytycznych dla dostępności treści internetowych (WCAG), gdzie znajduje się wstęp i odnośniki do materiałów edukacyjnych oraz informacji technicznych dotyczących WCAG.</p>
+      <p>WCAG 2.1 rozszerzają <a href="https://www.w3.org/TR/WCAG20/" hreflang="en" lang="en">Web Content Accessibility Guidelines 2.0 (WCAG20)</a>, które zostały opublikowane w grudniu 2008 roku, jako rekomendacja W3C. Treść zgodna z WCAG 2.1 jest również zgodna z WCAG 2.0. Intencją Grupy Roboczej jest, aby dla polityk wymagających zgodności z WCAG 2.0, WCAG 2.1 mogły zapewnić alternatywne środki zgodności. Publikacja WCAG 2.1 nie deprecjonuje ani nie zastępuje WCAG 2.0. Chociaż WCAG 2.0 nadal pozostają rekomendacją W3C, W3C zaleca stosowanie WCAG 2.1, aby zmaksymalizować możliwości zastosowania w przyszłości działań na rzecz dostępności. W3C zachęca również do korzystania z najbardziej aktualnej wersji WCAG przy opracowywaniu lub aktualizacji polityki dostępności cyfrowej.</p>
+    </section>
+
+
+
+    <section id="sotd">
+      <p style="color:red">TEKST POWYŻEJ JEST DODANY AUTOMATYCZNIE</p>
+      <p>Poniższa część opisuje status dokumentu w momencie jego publikacji. Inne dokumenty mogą w przyszłości zastąpić niniejszy. Lista bieżących publikacji <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> oraz zaktualizowany raport techniczny znajdują się na stronie <a href="http://www.w3.org/TR/" hreflang="en" lang="en"><abbr lang="en" title="World Wide Web Consortium">W3C</abbr> technical reports index</a> pod adresem http://www.w3.org/TR/.</p>
+
+      <p>WCAG 2.1 są <a href="https://www.w3.org/2018/Process-20180201/#RecsW3C" hreflang="en" lang="en">Rekomendacją <abbr lang="en" title="World Wide Web Consortium">W3C</abbr></a> opracowaną przez <a href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</a> (Grupę Roboczą ds. Wytycznych dla Dostępności).</p>
+
+      <p>Niniejszy dokument został zrecenzowany przez członków <abbr lang="en" title="World Wide Web Consortium">W3C</abbr>, programistów, inne grupy <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> oraz inne zainteresowane strony, a następnie zatwierdzony przez Dyrektora <abbr lang="en" title="World Wide Web Consortium">W3C</abbr>, jako Rekomendacja <abbr lang="en" title="World Wide Web Consortium">W3C</abbr>. Jest to wersja finalna dokumentu, która może zostać wykorzystana jako materiał źródłowy lub być cytowana w innych dokumentach W3C. Rolą <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> jest zwrócenie uwagi na tę specyfikację i promowanie jej powszechnego wdrożenia. Stosowanie zaleceń zawartych w tej specyfikacji zwiększa funkcjonalność oraz interoperacyjność sieci.</p>
+
+      <p>Publikując tę rekomendację, <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> zakłada, że na funkcjonalność określoną w tej rekomendacji nie będą miały wpływu zmiany w specyfikacjach <a href="https://www.w3.org/TR/css-values-3/" hreflang="en" lang="en">CSS Values and Units Module Level 3</a> oraz <a href="https://www.w3.org/TR/2019/REC-pointerevents2-20190404/" hreflang="en" lang="en">Pointer Events Level 2</a>. Grupa Robocza będzie nadal śledzić te specyfikacje.</p>
+
+      <p>Aby skomentować, <a href="https://github.com/w3c/wcag/issues/new" hreflang="en" lang="en">zgłoś problem w repozytorium WCAG <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> na platformie GitHub</a>. Grupa Robocza prosi, aby komentarze publiczne były składane jako nowe problemy, po jednym w zgłoszeniu. Utworzenie konta GitHub w celu zgłaszania problemów jest bezpłatne. Jeśli zgłaszanie problemów na GitHub jest niemożliwe,  komentarze można też przesyłać na adres <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a>. Komentarze na temat rekomendacji WCAG 2.1 nie będą powodować zmian w tej wersji wytycznych. Mogą jednak zostać uwzględnione w erracie lub przyszłych wersjach WCAG. Grupa Robocza nie przewiduje formalnych odpowiedzi na komentarze. Lista <a href="https://github.com/w3c/wcag/issues/" hreflang="en" lang="en">zgłoszonych problemów</a> oraz <a href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">Archiwum dyskusji na listach mailingowych AG WG</a> są publicznie dostępne. Grupa Robocza może wziąć pod uwagę komentarze dotyczące niniejszego dokumentu w przyszłości.</p>
+
+      <p>Ten dokument został opublikowany przez <a href="https://www.w3.org/WAI/GL/" hreflang="en" lang="en">Accessibility Guidelines Working Group</a> (Grupę Roboczą Wytycznych dla Dostępności) jako rekomendacja.</p>
+
+      <p>Zobacz <a href="https://www.w3.org/WAI/WCAG21/implementation-report/" hreflang="en" lang="en">raport Grupy Roboczej z wdrożenia</a>.</p>
+
+      <p>Niniejszy dokument został stworzony zgodnie z <a href="https://www.w3.org/Consortium/Patent-Policy/" hreflang="en" lang="en">Polityką Patentową <abbr lang="en" title="World Wide Web Consortium">W3C</abbr></a>. <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> prowadzi pełną listę zgłoszonych publicznie patentów odnośnie tego dokumentu. Powyższa strona zawiera również instrukcje zgłaszania patentu. Osoby, które twierdzą, iż posiadają wiedzę na temat patentów zawierających <a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential" hreflang="en" lang="en">istotne roszczenia</a> (Essential Claim(s)) powinny zgłosić takie informacje, zgodnie z
+          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure" hreflang="en" lang="en">Rozdziałem 6 Polityki Patentowej Konsorcjum <abbr lang="en" title="World Wide Web Consortium">W3C</abbr></a>.</p>
+
+
+      <p>Niniejszy dokument podlega <a href="https://www.w3.org/2018/Process-20180201/" hreflang="en" lang="en">dokumentowi procesowemu <abbr lang="en" title="World Wide Web Consortium">W3C</abbr> z 1 lutego 2018 r.</a></p>
+      <p style="color:red">TEKST PONIŻEJ (do nagłówka) JEST DODANY AUTOMATYCZNIE</p>
+    </section>
+
+    <section class="informative introductory" id="intro">
+      <h2 id="introduction">Wprowadzenie</h2>
+      <p><em>Niniejsza sekcja pełni funkcję informacyjną.</em></p>
+      <section id="background-on-wcag-2">
+        <h3>Kontekst WCAG 2</h3>
+
+        <p>„Wytyczne dla dostępności treści internetowych (WCAG) 2.1” określają, w jaki sposób zwiększyć dostępność treści internetowych dla osób z  niepełnosprawnościami. Mowa tutaj o wielu rodzajach niepełnosprawności: ze względu na wzrok, słuch, kłopoty z mową, trudności w uczeniu się, ograniczenia poznawcze, ruchowe, lingwistyczne czy też neurologiczne. Chociaż wytyczne poruszają szereg zagadnień, nie jest możliwe, aby odpowiadały szczegółowo na potrzeby wszystkich możliwych rodzajów, stopni niepełnosprawności, czy też niepełnosprawności złożonych. Wytyczne pozwalają jednak tworzyć bardziej użyteczne treści, zarówno dla starszych użytkowników, których sprawność zmienia się wraz z wiekiem, jak i dla każdego innego użytkownika.</p>
+
+        <p>WCAG 2.1 zostały opracowane zgodnie z <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/" hreflang="en" lang="en">procedurami W3C</a>, we współpracy z osobami indywidualnymi oraz różnymi organizacjami z całego świata. Celem było stworzenie wspólnego standardu dostępności treści internetowych, który spełniałby oczekiwania użytkowników, firm czy administracji państwowej w różnych krajach.</p>
+
+        <p>WCAG 2.1 opierają się na WCAG 2.0 [<a href="https://www.w3.org/TR/WCAG21/#bib-WCAG20" hreflang="en" lang="en">WCAG20</a>], które z kolei opierają się na WCAG 1.0 [<a href="https://www.w3.org/TR/WCAG21/#bib-WAI-WEBCONTENT" hreflang="en" lang="en">WAI-WEBCONTENT</a>] i są przeznaczone do szerokiego zastosowania w różnych technologiach internetowych zarówno teraz, jak i w przyszłości. Są one tak skonstruowane, aby ich spełnienie można było sprawdzić za pomocą kombinacji narzędzi automatycznych i oceny dokonywanej przez człowieka. Na stronie „<a href="http://www.w3.org/WAI/standards-guidelines/wcag/" hreflang="en" lang="en">Web Content Accessibility Guidelines (WCAG) Overview</a>”, znajduje się więcej informacji ogólnych na temat wytycznych WCAG.</p>
+
+        <p>Przy określaniu dodatkowych kryteriów dotyczących niepełnosprawności poznawczych, językowych i związanych z uczeniem się, napotkano istotne wyzwania, w tym spowodowane krótkim harmonogramem prac, a także wyzwania w osiągnięciu konsensusu w zakresie testowalności, możliwości wdrożenia i rozpatrzenia propozycji na forum międzynarodowym. Prace w tej dziedzinie będą kontynuowane w przyszłych wersjach WCAG. Zachęcamy autorów do zapoznania się z naszymi dodatkowymi wskazówkami dotyczącymi <a href="http://www.w3.org/WAI/standards-guidelines/wcag/#supplement" hreflang="en" lang="en">poprawy integracji osób z niepełnosprawnościami, w tym osób z trudnościami w uczeniu się i poznawaniu, osób słabowidzących i innych</a>.</p>
+
+        <p>Dostępność sieci nie jest uzależniona jedynie od treści stron internetowych, ale również od dostępnych przeglądarek internetowych czy innych programów stosowanych przez użytkownika. Ważną rolę w dostępności spełniają również narzędzia do tworzenia treści. Dalsze informacje na ten temat znajdują się na następujących stronach:</p>
+
+        <ul>
+          <li><a href="https://www.w3.org/WAI/fundamentals/components/" hreflang="en" lang="en">Essential Components of Web Accessibility</a> (Kluczowe komponenty dostępnosci internetowej),</li>
+          <li><a href="https://www.w3.org/WAI/standards-guidelines/uaag/" hreflang="en" lang="en">User Agent Accessibility Guidelines (UAAG) Overview)</a> (Omówienie Wytycznych dla dostępności programów użytkownika),</li>
+          <li><a href="https://www.w3.org/WAI/standards-guidelines/atag/" hreflang="en" lang="en">Authoring Tool Accessibility Guidelines (ATAG) Overview</a> (Omówienie Wytycznych dla dostępności narzedzi do tworzenia treści).</li>
+        </ul>
+
+      </section>
+
+      <section id="wcag-2-layers-of-guidance">
+        <h3>Warstwy wytycznych WCAG 2.1</h3>
+        <p>Osoby indywidualne i organizacje, które korzystają z wytycznych WCAG 2.1 to różnorodna grupa, obejmująca między innymi osoby projektujące serwisy internetowe, decydentów, nabywców usług, nauczycieli czy studentów. Aby sprostać różnym potrzebom tych grup odbiorców, stworzono kilka warstw wytycznych, w tym zasady ogólne, wytyczne, mierzalne kryteria sukcesu, bogaty zbiór wystarczających technik, technik dodatkowych oraz udokumentowane, często występujące błędy, poparte przykładami, odnośnikami do zasobów i fragmentami kodu źródłowego.</p>
+
+        <ul>
+          <li><strong>Zasady</strong> — na szczycie hierarchii znajdują się 4 zasady, które stanowią fundament dostępności internetowej: postrzegalność, funkcjonalność, zrozumiałość i rzetelność. Więcej informacji: ”<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head" hreflang="en" lang="en">Understanding the Four Principles of Accessibility</a>” (Zrozumienie czterech zasad dostępności).</li>
+          <li><strong>Wytyczne</strong> — na kolejnym poziomie, znajdują się wytyczne. 13 wytycznych definiuje podstawowe cele, do których powinni dążyć autorzy, aby treści były bardziej dostępne dla użytkowników z różnymi niepełnosprawnościami. Wytyczne nie są mierzalne, ale stanowią ogólne ramy i cele do osiągnięcia. Mają pomóc autorom zrozumieć kryteria sukcesu i pozwolić na ich skuteczniejsze wdrażanie.</li>
+          <li><strong>Kryteria sukcesu</strong> — dla każdej wytycznej opracowano mierzalne kryteria sukcesu. Pozwala to na zastosowanie WCAG 2.1 wszędzie tam, gdzie konieczne jest sprawdzenie zgodności z wytycznymi, np. przy specyfikacji projektu, zamawianiu usług internetowych, w przepisach prawnych oraz przy umowach. Aby zaspokoić potrzeby różnych grup i różnych sytuacji, zdefiniowano trzy poziomy zgodności: A (najniższy), AA i AAA (najwyższy). Dodatkowe informacje na temat poziomów WCAG można znaleźć na stronie „<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels" hreflang="en" lang="en">Understanding Levels of Conformance</a>” (Zrozumieć poziomy zgodności).</li>
+          <li><strong>Techniki wystarczające i dodatkowe</strong> — dla każdej wytycznej oraz kryterium sukcesu WCAG 2.1, grupa robocza zebrała szereg technik (dokument ma charakter informacyjny, ale nie formalny). Podzielono je na dwie kategorie: techniki wystarczające, by spełnić kryteria sukcesu, oraz techniki dodatkowe. Techniki dodatkowe wykraczają poza to, co jest wymagane przez dane kryteria sukcesu i pozwalają wykonawcom i autorom na jeszcze lepszą realizację wytycznych. Niektóre techniki dodatkowe dotyczą barier dostępności, które nie zostały ujęte w mierzalnych kryteriach sukcesu. Często występujące błędy w miarę możliwości również zostały udokumentowane. Więcej informacji w: „<a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques" hreflang="en" lang="en">Understanding Techniques for WCAG Success Criteria</a>” (Zrozumieć techniki dla kryteriów sukcesu WCAG).</li>
+        </ul>
+        <p>Wszystkie powyższe warstwy (zasady, wytyczne, kryteria sukcesu, techniki wystarczające i dodatkowe) uzupełniają się wzajemnie i wskazują, w jaki sposób tworzyć bardziej dostępne treści internetowe. Wykonawcom i autorom treści doradza się stosowanie w miarę możliwości wszystkich warstw, w tym także technik dodatkowych, aby zaspokoić potrzeby jak najszerszej grupy użytkowników. Należy pamiętać, że nawet treści, która są zgodne na najwyższym (AAA) poziomie, nie będą dostępne dla osób ze wszystkimi rodzajami i stopniami niepełnosprawności, czy też z niepełnosprawnością złożoną, szczególnie w zakresie problemów z uczeniem się oraz zrozumieniem języka.</p>
+
+        <p>Zachęca się wykonawców i autorów treści do zastosowania szerokiego zakresu technik, w tym technik dodatkowych, ale także do poszukiwania najlepszych praktyk stosowanych w danym momencie rozwoju Internetu, aby treści były w możliwie największym stopniu dostępne dla osób z różnymi dysfunkcjami. <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata" hreflang="en" lang="en">Metadane</a> mogą pomóc użytkownikom w znalezieniu treści najbardziej dostosowanych do ich potrzeb.</p>
+
+      </section>
+      <section id="wcag-2-1-supporting-documents">
+
+        <h3>Dokumenty uzupełniające WCAG 2.1</h3>
+        <p>WCAG 2.1 są sformułowane w taki sposób, aby odpowiedzieć na oczekiwania tych, którzy potrzebują stabilnej dokumentacji technicznej — punktu odniesienia do zasad dostępności. Pozostałe dokumenty, zwane tu dokumentami uzupełniającymi, opierają się na WCAG 2.1 i spełniają inne ważne funkcje. W odróżnieniu od samego WCAG 2.1, mogą być aktualizowane gdy zaistnieje potrzeba wdrażania WCAG 2.1 w nowych technologiach internetowych. Do dokumentów uzupełniających należą:</p>
+
+        <ol>
+          <li>„<a href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en" lang="en"><strong>How to Meet WCAG</strong></a>” (Jak spełnić WCAG) — Konfigurowalna i aktualizowana na bieżąco lista odniesień (referencji) do WCAG 2.1. zawierająca wszystkie wytyczne, kryteria sukcesu i techniki, z których mogą korzystać autorzy podczas opracowywania i oceny treści internetowych. Obejmuje zarówno treści WCAG 2.0, jak i WCAG 2.1. Można je filtrować na wiele sposobów, aby autorzzy mogli się skupić na odpowiednich treściach.</li>
+          <li>„<a href="https://www.w3.org/WAI/WCAG21/Understanding/" hreflang="en" lang="en"><strong>Understanding WCAG</strong></a>” (Zrozumienie WCAG 2.1) — przewodnik ułatwiający zrozumienie i wdrożenie WCAG 2.1. Do każdej wytycznej i kryterium sukcesu WCAG 2.1 powstał krótki poradnik pomagający zrozumieć ich kluczowe aspekty.</li>
+          <li>„<a href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en" lang="en"><strong>Techniques for WCAG 2.1</strong></a>” (Techniki dla WCAG 2.1) — zbiór technik oraz często występujących błędów. Każdy z elementów przedstawiony jest w osobnym dokumencie, zawierającym opis, przykłady, kody źródłowe oraz testy.</li>
+          <li>„<a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/" hreflang="en" lang="en"><strong>The WCAG Documents</strong></a>” (Dokumenty WCAG) — opis dokumentów technicznych WCAG 2.1 w postaci wykresu. Pokazuje, w jaki sposób są one ze sobą powiązane.</li>
+        </ol>
+
+        <p>W dokumencie „<a href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en" lang="en">Web Content Accessibility Guidelines (WCAG) Overview</a>” (Omówienie Wytycznych dla dostępności internetowej), umieszczono opis materiałów powiązanych z WCAG 2.1, w tym materiały edukacyjne związane z WCAG 2. Materiały dodatkowe, obejmujące takie tematy, jak analiza kosztów i korzyści (business case) w zakresie dostępności, propozycje planowania wdrażania wytycznych dostępności oraz kwestie prawne dotyczące dostępności znajdują się na stronie <a href="http://www.w3.org/WAI/Resources/Overview" hreflang="en" lang="en">WAI Resources</a> (Omówienie zasobów WAI).</p>
+      </section>
+
+
+
+
+
+      <section id="requirements-for-wcag-2-1">
+        <h3>Wymagania dotyczące WCAG 2.1</h3>
+
+        <p>WCAG 2.1 spełniają <a href="https://w3c.github.io/wcag21/requirements/" hreflang="en" lang="en">zestaw wymagań dotyczących WCAG 2.1</a>, które z kolei odziedziczyły wymagania dotyczące WCAG 2.0. Wymagania tworzą ogólne ramy wytycznych i zapewniają zgodność wsteczną. Grupa Robocza zastosowała również mniej formalny zestaw kryteriów akceptacji dla kryteriów sukcesu, aby zapewnić, że kryteria sukcesu są podobne pod względem stylu i jakości do tych zawartych w WCAG 2.0. Wymagania ograniczały to, co mogło być ujęte w WCAG 2.1. To ograniczenie było konieczne, aby zachować charakter wydania WCAG 2.1 jako <a>wydania punktowego</a> WCAG 2.</p>
+
+
+      </section>
+      <section id="comparison-with-wcag-2-0">
+        <h3>Porównanie z WCAG 2.0</h3>
+
+
+        <p>WCAG 2.1 zostały zainicjowane, aby ulepszyć wytyczne dotyczące dostępności dla trzech głównych grup: użytkowników z zaburzeniami funkcji poznawczych lub uczenia się, użytkowników ze słabym wzrokiem oraz użytkowników z niepełnosprawnościami powodującymi problemy w korzystaniu z urządzeń przenośnych. Zaproponowano i oceniono wiele sposobów zaspokojenia tych potrzeb, a Grupa Robocza dopracowała ich zestaw. Wymagania strukturalne odziedziczone po WCAG 2.0, jasność i wpływ propozycji, a także przyjęty harmonogram prac, doprowadziły do powstania ostatecznego zestawu kryteriów sukcesu zawartych w niniejszej wersji. Grupa Robocza uważa, że WCAG 2.1 stopniowo rozwija wytyczne dla dostępności treści internetowych we wszystkich tych obszarach, ale podkreśla, że te wytyczne nie zaspokajają wszystkich potrzeb użytkowników.</p>
+
+        <p>WCAG 2.1 są oparte na WCAG 2.0 i są z nim kompatybilne wstecznie, co oznacza, że ​​strony internetowe zgodne z WCAG 2.1 są również zgodne z WCAG 2.0. Autorzy, którzy są zobowiązani przez polityki swoich organizacji do zgodności z WCAG 2.0, będą mogli aktualizować treści do WCAG 2.1 bez utraty zgodności z WCAG 2.0. Autorzy przestrzegający obu zestawów wytycznych powinni zdawać sobie sprawę z następujących różnic:</p>
+        <section id="new-features-in-wcag-2-1">
+          <h4>Nowe funkcje w WCAG 2.1</h4>
+
+          <p>WCAG 2.1 rozszerza WCAG 2.0, dodając nowe kryteria sukcesu,  wspierające je definicje, wytyczną organizującą nowe kryteria sukcesu dodatków oraz kilka dodatków do sekcji zgodności. To podejście addytywne pomaga wyjaśnić, że strony, które są zgodne z WCAG 2.1, są również zgodne z WCAG 2.0, spełniając tym samym wymagania zgodności specyficzne dla WCAG 2.0. Grupa Robocza ds. Wytycznych dla Dostępności zaleca, aby strony przyjęły WCAG 2.1 jako nowy cel zgodności, nawet jeśli formalne zobowiązania wspominają WCAG 2.0, aby zapewnić lepszą dostępność i wyprzedzić przyszłe zmiany polityki.</p>
+
+          <p>Następujące kryteria sukcesu są nowe w WCAG 2.1:</p>
+
+          <ul>
+            <li><a href="#x1-3-4-orientacja"><strong>1.3.4 Orientacja</strong></a> (AA)</li>
+            <li><a href="#x1-3-5-okreslenie-pozadanej-wartosci"><strong>1.3.5 Określenie pożądanej wartości</strong></a> (AA)</li>
+            <li><a href="#x1-3-6-okreslenie-przeznaczenia"><strong>1.3.6 Określenie przeznaczenia</strong></a>(AAA)</li>
+            <li><a href="#x1-4-10-dopasowanie-do-ekranu"><strong>1.4.10 Dopasowanie do ekranu</strong></a> (AA)</li>
+            <li><a href="#x1-4-11-kontrast-elementow-nietekstowych"><strong>1.4.11 Kontrast elementów nietekstowych</strong></a> (AA)</li>
+            <li><a href="#x1-4-12-odstepy-w-tekscie"><strong>1.4.12 Odstępy w tekście</strong></a> (AA)</li>
+            <li><a href="#x1-4-13-tresc-spod-kursora-lub-fokusu"><strong>1.4.13 Treść spod kursora lub fokusu</strong></a> (AA)</li>
+            <li><a href="#x2-1-4-jednoznakowe-skroty-klawiaturowe"><strong>2.1.4 Jednoznakowe skróty klawiaturowe</strong></a> (A)</li>
+            <li><a href="#x2-2-6-ostrzezenie-o-limicie-czasu"><strong>2.2.6 Ostrzeżenie o limicie czasu</strong></a> (AAA)</li>
+            <li><a href="#x2-3-3-animacja-po-interakcji"><strong>2.3.3 Animacja po interakcji</strong></a> (AAA)</li>
+            <li><a href="#x2-5-1-gesty-dotykowe"><strong>2.5.1 Gesty dotykowe</strong></a> (A)</li>
+            <li><a href="#x2-5-2-rezygnacja-ze-wskazania"><strong>2.5.2 Rezygnacja ze wskazania</strong></a> (A)</li>
+            <li><a href="#x2-5-3-etykieta-w-nazwie"><strong>2.5.3 Etykieta w nazwie</strong></a> (A)</li>
+            <li><a href="#x2-5-4-aktywowanie-ruchem"><strong>2.5.4 Aktywowanie ruchem</strong></a> (A)</li>
+            <li><a href="#x2-5-5-rozmiar-celu-dotykowego"><strong>2.5.5 Rozmiar celu dotykowego</strong></a> (AAA)</li>
+            <li><a href="#x2-5-6-rownoleg-y-mechanizm-wprowadzania-danych"><strong>2.5.6 Równoległy mechanizm wprowadzania danych</strong></a> (AAA)</li>
+            <li><a href="#x4-1-3-komunikaty-o-stanie"><strong>4.1.3 Komunikaty o stanie</strong></a> (AA)</li>
+          </ul>
+
+          <p>Wiele z tych kryteriów sukcesu odnosi się do nowych terminów, które zostały również dodane do słownika i stanowią część normatywnych wymagań kryteriów sukcesu.</p>
+
+          <p>W części 5. Zgodność została dodana trzecia uwaga na temat wariantów stron, a w części <a href="#xx5-3-2-opcjonalne-sk-adniki-deklaracji-zgodnosci">Opcjonalne składniki deklaracji zgodności</a> do odczytu maszynowego została dodana opcja metadanych.</p>
+
+        </section>
+        <section id="numbering-in-wcag-2-1">
+          <h4>Numeracja w WCAG 2.1</h4>
+          <p>Aby uniknąć zamieszania w narzędziach, dla których ważna jest kompatybilność wsteczna z WCAG 2.0, nowe kryteria sukcesu w WCAG 2.1 zostały dołączone na końcu zestawu kryteriów sukcesu w ramach ich wytycznych. Pozwoliło to uniknąć konieczności zmiany numeracji części kryteriów sukcesu z WCAG 2.0, co byłoby spowodowane wstawianiem nowych kryteriów sukcesu między istniejącymi kryteriami sukcesu w wytycznych. Ale spowodowało to, że kryteria sukcesu w każdej z wytycznych nie są już pogrupowane według poziomu zgodności.Kolejność kryteriów sukcesu w ramach każdej wytycznej nie oznacza informacji o poziomie zgodności; wskazuje to tylko wskaźnik poziomu zgodności (A / AA / AAA) przy samym kryterium sukcesu. W dokumencie <a href="https://www.w3.org/WAI/WCAG21/quickref/" hreflang="en" lang="en">WCAG 2.1 Quick Reference</a> można przeglądać kryteria sukcesu pogrupowane według poziomu zgodności oraz wielu innych opcji filtrowania i sortowania.</p>
+        </section>
+        <section id="conformance-to-wcag-2-1">
+          <h4>Zgodność z WCAG 2.1</h4>
+
+          <p>WCAG 2.1 wykorzystują ten sam model zgodności co WCAG 2.0 z kilkoma dodatkami, które opisano w sekcji <a href="#x5-zgodnosc">5. Zgodność</a>. Zakłada się, że witryny zgodne z WCAG 2.1 są również zgodne z WCAG 2.0, co oznacza, że ​​spełniają wymagania wszystkich zasad odnoszących się do WCAG 2.0, a jednocześnie lepiej spełniają potrzeby użytkowników we współczesnej sieci internetowej.</p>
+        </section>
+      </section>
+      <section id="later-versions-of-accessibility-guidelines">
+        <h3>Późniejsze wersje wytycznych dotyczących dostępności</h3>
+
+
+        <p>Równolegle z WCAG 2.1 Grupa Robocza ds. Wytycznych dla Dostępności opracowuje kolejną ważną wersję wytycznych dla dostępności. Przewiduje się, że rezultatem tych prac będzie bardziej znacząca restrukturyzacja wytycznych dla dostępności internetowej, niż byłoby to realne w przypadku wydania punktowego WCAG 2. Prace prowadzone są zgodnie z ukierunkowaną na badania, skoncentrowaną na użytkownikach metodologią projektowania, aby zapewnić najbardziej efektywny i elastyczny wynik, w tym role związane z tworzeniem treści, obsługą programu użytkownika i obsługą narzędzi tworzenia treści. Jest to wysiłek wieloletni, dlatego też WCAG 2.1 są potrzebne jako tymczasowy środek zapewnienia zaktualizowanych wytycznych dla dostępności internetowej, aby odzwierciedlić zmiany w sieci internetowej od czasu publikacji WCAG 2.0. Grupa Robocza może również opracować dodatkowe wersje tymczasowe, kontynuując prace nad WCAG 2.2, aby zapewnić dodatkowe wsparcie do czasu, zanim zostanie ukończona kolejna główna wersja.</p>
+      </section>
+    </section>
+
+    <section class="principle" id="perceivable">
+      <h2>Postrzegalność </h2>
+      <p>Przedstawiaj użytkownikom informacje i komponenty interfejsu w sposób dostrzegalny dla ich zmysłów.</p>
+
+      <section class="guideline">
+        <h3>Alternatywa tekstowa</h3>
+        <p>Zapewnij tekstowe zamienniki wszystkich treści nietekstowych, aby można je było zamienić na inne formy (np. powiększony druk, brajl, mowa syntetyczna, symbole lub prostszy język)</p>
+
+        <section data-include="sc/20/non-text-content.html" data-include-replace="true"></section>
+      </section>
+
+      <section class="guideline">
+        <h3>Multimedia</h3>
+        <p>Zapewnij rozwiązania alternatywne dla mediów opartych na czasie.</p>
+
+        <section data-include="sc/20/audio-only-and-video-only-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/captions-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/audio-description-or-media-alternative-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/captions-live.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/audio-description-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/sign-language-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/extended-audio-description-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/media-alternative-prerecorded.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/audio-only-live.html" data-include-replace="true"></section>
+      </section>
+
+      <section class="guideline">
+        <h3>Możliwość adaptacji</h3>
+        <p>Twórz treści, które mogą być prezentowane na różne sposoby bez utraty informacji czy struktury.</p>
+
+        <section data-include="sc/20/info-and-relationships.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/meaningful-sequence.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/sensory-characteristics.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/orientation.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/identify-input-purpose.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/identify-purpose.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Rozróżnialność</h3>
+        <p>Ułatwiaj oglądanie i słuchanie treści oraz oddzielanie informacji od tła.</p>
+
+        <section data-include="sc/20/use-of-color.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/audio-control.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/contrast-minimum.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/resize-text.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/images-of-text.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/contrast-enhanced.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/low-or-no-background-audio.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/visual-presentation.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/images-of-text-no-exception.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/reflow.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/non-text-contrast.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/text-spacing.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/content-on-hover-or-focus.html" data-include-replace="true"></section>
+
+      </section>
+
+    </section>
+    <section class="principle" id="operable">
+      <h2>Funkcjonalność</h2>
+      <p>Zapewnij, aby komponenty interfejsu użytkownika i nawigacja były możliwe do użycia.</p>
+
+      <section class="guideline">
+        <h3>Dostępność z klawiatury</h3>
+        <p>Zapewnij dostępność wszystkich funkcjonalności za pomocą klawiatury.</p>
+
+        <section data-include="sc/20/keyboard.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/no-keyboard-trap.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/keyboard-no-exception.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/character-key-shortcuts.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Wystarczający czas</h3>
+        <p>Zapewnij użytkownikom wystarczająco dużo czasu na przeczytanie i skorzystanie z treści.</p>
+
+        <section data-include="sc/20/timing-adjustable.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/pause-stop-hide.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/no-timing.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/interruptions.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/re-authenticating.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/timeouts.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Ataki padaczki</h3>
+        <p>Prezentuj treść tak, aby nie wywoływała napadów padaczkowych.</p>
+
+        <section data-include="sc/20/three-flashes-or-below-threshold.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/three-flashes.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/animation-from-interactions.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Możliwość nawigacji</h3>
+        <p>Zapewnij użytkownikowi narzędzia pomagające w nawigacji, znalezieniu treści i określeniu, gdzie się aktualnie znajduje.</p>
+
+        <section data-include="sc/20/bypass-blocks.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/page-titled.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/focus-order.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/link-purpose-in-context.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/multiple-ways.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/headings-and-labels.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/focus-visible.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/location.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/link-purpose-link-only.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/section-headings.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/focus-appearance-minimum.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/focus-appearance-enhanced.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/fixed-reference-points.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Metody obsługi</h3>
+        <p>Ułatwiaj użytkownikom obsługę funkcji za pomocą różnych sposobów poza klawiaturą</p>
+
+        <section data-include="sc/21/pointer-gestures.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/pointer-cancellation.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/label-in-name.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/motion-actuation.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/target-size.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/concurrent-input-mechanisms.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/dragging.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/pointer-target-spacing.html" data-include-replace="true"></section>
+
+      </section>
+
+    </section>
+    <section class="principle" id="understandable">
+      <h2>Zrozumiałość</h2>
+      <p>Zadbaj o to, aby informacje i obsługa interfejsu były zrozumiałe.</p>
+
+      <section class="guideline">
+        <h3>Możliwość odczytania</h3>
+        <p>Twórz treści możliwe do odczytania i zrozumienia.</p>
+
+        <section data-include="sc/20/language-of-page.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/language-of-parts.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/unusual-words.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/abbreviations.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/reading-level.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/pronunciation.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Przewidywalność</h3>
+        <p>Twórz strony internetowe tak, aby otwierały się, wyglądały i działały w sposób przewidywalny.</p>
+
+        <section data-include="sc/20/on-focus.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/on-input.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/consistent-navigation.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/consistent-identification.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/change-on-request.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/findable-help.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/hidden-controls.html" data-include-replace="true"></section>
+
+      </section>
+
+      <section class="guideline">
+        <h3>Pomoc przy wprowadzaniu informacji</h3>
+        <p>Pomagaj użytkownikom unikać błędów i je korygować.</p>
+
+        <section data-include="sc/20/error-identification.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/labels-or-instructions.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/error-suggestion.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/error-prevention-legal-financial-data.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/help.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/error-prevention-all.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/accessible-authentication.html" data-include-replace="true"></section>
+
+        <section data-include="sc/22/redundant-entry.html" data-include-replace="true"></section>
+
+      </section>
+
+    </section>
+    <section class="principle" id="robust">
+      <h2>Solidność</h2>
+      <p>Twórz treści solidnie, aby mogły być skutecznie interpretowane przez różne programy użytkownika, w tym technologie wspomagające.</p>
+
+      <section class="guideline">
+        <h3>Kompatybilność</h3>
+        <p>Zapewnij jak największą zgodność z aktualnymi i przyszłymi programami użytkownika, w tym z technologiami asystującymi.</p>
+
+        <section data-include="sc/20/parsing.html" data-include-replace="true"></section>
+
+        <section data-include="sc/20/name-role-value.html" data-include-replace="true"></section>
+
+        <section data-include="sc/21/status-messages.html" data-include-replace="true"></section>
+
+      </section>
+
+    </section>
+    <section>
+      <h1>Zgodność</h1>
+
+      <p>W tej części wymieniono wymagania dotyczące <a>zgodności</a> z wytycznymi WCAG 2.1. Zawarto także informacje, w jaki sposób można składać oświadczenia o zgodności (są opcjonalne). Na końcu wyjaśnione zostało pojęcie wspierania (obsługiwania) dostępności, ponieważ tylko technologie <a>obsługujące dostępność</a> mogą stanowić <a>wiarygodną podstawę zgodności</a>. Dokument <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html" hreflang="en" lang="en">Understanding Conformance</a> (Zrozumieć zgodność) zawiera dalsze wyjaśnienie pojęcia <a>obsługiwania dostępności</a>.</p>
+
+      <section>
+        <h2>Interpretacja wymagań normatywnych</h2>
+        <p>Główna treść WCAG 2.1 ma charakter <a>normatywny</a> i określa wymagania, które mają wpływ na deklaracje zgodności. Materiał wprowadzający, dodatki, sekcje oznaczone jako „nienormatywne”, diagramy, przykłady i uwagi mają charakter <a>informacyjny</a> (nienormatywny). Materiały nienormatywne zawierają informacje dodatkowe, które pomagają interpretować wytyczne, ale nie tworzą wymagań, które mają wpływ na deklarację zgodności.</p>
+
+        <p>Słowa kluczowe <em>MOGĄ</em>, <em>MUSZĄ</em>, <em>NIE MUSZĄ</em>, <em>NIE POLECANE</em>, <em>POLECANE</em>, <em>POWINNY</em> i <em>NIE POWINNY</em> należy interpretować zgodnie z opisem w [[RFC2119]].</p>
+      </section>
+
+      <section id="conformance-reqs">
+        <h2>Wymogi dotyczące zgodności</h2>
+        <p>Aby strona internetowa była zgodna z wytycznymi WCAG 2.1, muszą być spełnione wszystkie poniższe wymagania dotyczące zgodności:</p>
+
+        <!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
+
+
+        <section id="cc1">
+          <h3>Poziom zgodności</h3>
+          <p>Jeden z poniższych poziomów zgodności jest w pełni osiągnięty:</p>
+          <ul>
+            <li><strong>Poziom A</strong> (minimalny): <a>Strona internetowa</a> <a>spełnia</a>  wszystkie kryteria sukcesu na poziomie A albo dostępna jest <a>wersja alternatywna spełniająca kryteria sukcesu</a> na poziomie A.</li>
+            <li><strong>Poziom AA</strong>: Strona internetowa spełnia wszystkie kryteria sukcesu na poziomie A oraz na poziomie AA albo dostępna jest wersja alternatywna spełniająca kryteria sukcesu na poziomie A i poziomie AA.</li>
+            <li><strong>Poziom AAA</strong>: Strona internetowa spełnia wszystkie kryteria sukcesu na poziomie A, na poziomie AA oraz na poziomie AAA albo dostępna jest wersja alternatywna spełniająca kryteria sukcesu na poziomie A, poziomie AA i poziomie AAA.</li>
+          </ul>
+          <p class="note">Chociaż zgodność może zostać osiągnięta tylko na oznaczonych poziomach, zachęca się autorów, aby podawali (w oświadczeniu zgodności) jakikolwiek postęp na drodze do spełnienia kryteriów sukcesu na poziomach wyższych niż osiągnięty.</p>
+          <p class="note">Odradza się wyznaczania poziomu AAA jako wymaganego dla całych witryn, ponieważ w przypadku niektórych treści spełnienie wszystkich kryteriów sukcesu na poziomie AAA nie jest możliwe.</p>
+        </section>
+
+        <!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
+        <section id="cc2">
+          <h3>Całe strony</h3>
+          <p><a>Zgodność</a> (i poziom zgodności) dotyczy całej <a>strony internetowej</a> i nie można jej osiągnąć, jeśli jakaś część strony zostanie wyłączona z oceny.</p>
+
+          <p class="note">W celu ustalenia zgodności przyjmuje się, że wersje alternatywne części treści strony są częścią strony, jeśli wersje alternatywne są dostępne bezpośrednio z danej strony, np. długi opis lub alternatywna prezentacja nagrania wideo.</p>
+
+          <p class="note">Autorzy stron internetowych, którzy nie mogą osiągnąć zgodności ze względu na treść pozostającą poza ich kontrolą, mogą rozważyć <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-partial" hreflang="en" lang="en">Stwierdzenie częściowej zgodności</a>.</p>
+
+          <p class="note">Cała strona zawiera każdą odmianę strony, która jest automatycznie prezentowana przez stronę dla różnych rozmiarów ekranu (np. odmiany strony responsywnej). Każda z tych odmian musi być zgodna (lub musi mieć zgodną alternatywną wersję), aby cała strona była zgodna.</p>
+        </section>
+
+        <!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
+        <section id="cc3">
+          <h3>Całe procesy</h3>
+          <p>Jeśli dana <a>strona internetowa</a> jest jedną z wielu stron prezentujących jakąś <a>procedurę</a> (tzn. sekwencję kroków, które należy wykonać, aby dokończyć jakąś czynność), to wszystkie wszystkie strony prezentujące etapy procesu spełniają wymogi co najmniej na tym sammym poziomie zgodności. (Inaczej - zgodność na określonym poziomie nie jest osiągnięta, jeżeli którakolwiek ze stron prezentujących którykolwiek z etapów procesu nie spełnia wszystkich wymogów zgodności na tym poziomie.)</p>
+          <p class="example">Sklep internetowy prezentuje na kilku stronach procedurę wybierania i zakupu produktów. Wszystkie strony w tej procedurze, od początku do końca (do wykonania płatności) są zgodne na tym samym poziomie.</p>
+        </section>
+
+        <!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
+        <section id="cc4">
+          <h3>Użycie technologii obsługujących dostępność</h3>
+
+          <p>Tylko technologie <a>obsługujące dostępność</a> są uwzględniane jako podstawa spełnienia kryteriów sukcesu. Każda informacja czy funkcjonalność, która nie jest zapewniona w postaci obsługującej dostępność, musi mieć swoją wersję alternatywną obsługującą dostępność. (Więcej informacji: <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head" hreflang="en" lang="en">Understanding accessibility support</a> - Zrozumieć obsługę dostępności).</p>
+
+        </section>
+
+        <!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
+        <section id="cc5">
+          <h3>Bez zakłóceń</h3>
+          <p>Jeśli na stronie wykorzystywane są technologie, które nie obsługują dostępności lub są użyte tak, że nie obsługują dostępności, to technologie te nie blokują użytkownikom dostępu do reszty strony. Dodatkowo, <a>strona internetowa</a> jako całość nadal spełnia wymogi zgodności pod każdym z następujących warunków:</p>
+          <ol>
+            <li>gdy jakaś technologia, która nie <a>obsługuje dostępności</a>, jest włączona w programie użytkownika,</li>
+
+            <li>gdy jakaś technologia, która nie obsługuje dostępności, jest wyłączona w programie użytkownika, oraz</li>
+
+            <li>gdy jakaś technologia, która nie obsługuje dostępności, nie jest obsługiwana przez program użytkownika.</li>
+
+          </ol>
+          <p>Ponadto, następujące kryteria sukcesu dotyczą wszystkich treści na stronie, włącznie z treściami, które w innych przypadkach nie są podstawą spełnienia wymogów zgodności, ponieważ niezastosowanie poniższych kryteriów mogłoby uniemożliwiać korzystanie ze strony:</p>
+
+          <ul>
+            <li><strong>1.4.2 Kontrola odtwarzania dźwięku</strong></li>
+            <li><strong>2.1.2 Bez pułapki na klawiaturę</strong></li>
+            <li><strong>2.3.1 Trzy błyski lub wartości poniżej progu</strong></li>
+            <li><strong>2.2.2 Pauza, zatrzymanie, ukrycie</strong></li>
+          </ul>
+          <p class="note">Jeśli strona nie może być zgodna (na przykład testowa strona zgodności lub strona przykładowa), to nie można jej uwzględnić w zakresie zgodności, ani w deklarracji zgodności.</p>
+
+          <p>Więcej informacji, w tym przykłady, w <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conformance-requirements-head" hreflang="en" lang="en">Understanding Conformance Requirements</a> (Zrozumieć wymagania zgodności).</p>
+
+        </section>
+      </section>
+
+      <section id="conformance-claims">
+        <h2>Deklaracja zgodności (opcjonalne)</h2>
+        <p>Zgodność zdefiniowana została tylko dla (pojedynczych) stron internetowych. Można jednak złożyć deklarację zgodności obejmującą pojedynczą stronę, kilka stron lub całe zestawy stron internetowych, np. witrynę.</p>
+
+        <section id="conformance-required">
+          <h3>Wymagane elementy deklaracji zgodności</h3>
+          <p>Deklaracje zgodności <strong>nie są wymagane</strong>. Autorzy mogą dostosować się do WCAG 2.1 bez deklarowania zgodności. Jeśli jednak deklaracja zgodności zostanie złożona, wówczas musi zawierać następujące informacje:</p>
+          <ol>
+            <li>Data złożenia deklaracji.</li>
+            <li>Tytuł wytycznych, wersja oraz identyfikator URI („Wytyczne dla dostępności treści internetowych 2.1” pod adresem https://www.w3.org/TR/WCAG21/ (wersja anglojęzyczna). <span class="ednote">W WCAG 2.0 był to datowany URI, który może wymagać korekty</span>.</li>
+            <li>Osiągnięty <strong>poziom zgodności</strong> (Poziom A, AA lub AAA).
+              <p><strong>Zwięzły opis stron internetowych</strong>, taki jak lista adresów URI objętych deklaracją, wraz z adnotacją czy włączone są również poddomeny.</p>
+              <p class="note">Strony mogą być opisane oddzielnie, ale może być także użyty jeden opis dla wszystkich adresów URI.</p>
+              <p class="note">Produkty internetowe nie posiadające adresów URI przed instalacją na stronie klienta, mogą zostać opatrzone informacją, że po instalacji będą spełniać wymogi.</p>
+            </li>
+            <li>Lista uwzględnionych technologii tworzenia treści internetowych.</li>
+          </ol>
+          <p class="note">Wykorzystywane logo zgodności jest równoznaczne ze złożeniem deklaracji zgodności i musi wystąpić razem z wymaganymi, wyżej wymienionymi składowymi deklaracji zgodności.</p>
+        </section>
+
+        <section id="conformance-optional">
+          <h3>Opcjonalne składniki deklaracji zgodności </h3>
+          <p>Poza wymaganymi składowymi deklaracji zgodności, które zostały wymienione powyżej, warto rozważyć umieszczenie dodatkowych informacji, przydatnych dla użytkowników. Polecane dodatkowe informacje to na przykład:</p>
+          <ul>
+            <li>Wykaz kryteriów sukcesu wykraczających poza poziom zgodności, który został spełniony. Taką informację należy podać w formie, z której mogą korzystać użytkownicy, najlepiej w formie metadanych do odczytu maszynowego.</li>
+
+            <li>Wykaz konkretnych technologii, które „są używane, ale <a>nie zostały uwzględnione w ocenie zgodności</a>”.</li>
+
+            <li>Wykaz programów użytkownika, w tym technologii wspomagajacych, użytych do testowania treści.</li>
+
+            <li class="new">Wykaz konkretnych cech dostępności, podany w formie metadanych do odczytu maszynowego.</li>
+            <li>Informacje o wszelkich dodatkowych krokach podjętych w celu zwiększenia dostępności, które wykraczają poza kryteria sukcesu. </li>
+            <li>Wykaz poszczególnych technologii, które <a>zostały uwzględnione w ocenie zgodności</a>, podany w formie metadanych do odczytu maszynowego.</li>
+            <li>Wersja deklaracji zgodności, podana w formie metadanych do odczytu maszynowego.</li>
+          </ul>
+
+          <p class="note">Więcej informacji oraz przykładowe deklaracje zgodności można znaleźć w dokumencie <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance" hreflang="en" lang="en">Understanding Conformance Claims</a> (Zrozumieć deklaracje zgodności).</p>
+          <p class="note">Więcej informacji na temat wykorzystania metadanych w dekalracjach zgodności znajduje się w dokumencie <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/appendixC" hreflang="en" lang="en">Understanding Metadata</a> (Zrozumieć metadane).</p>
+
+        </section>
+      </section>
+    </section>
+    <section id="conformance-partial">
+      <h2>Deklaracja częściowej zgodności – treść umieszczana przez dostawców zewnętrznych</h2>
+      <p>Czasem strony internetowe tworzone są w taki sposób, aby móc je później uzupełnić dodatkową treścią. Na przykład jest to program do poczty elektronicznej, blog, artykuł, który pozwala użytkownikom na dodanie swoich komentarzy, lub też aplikacja pozwalająca na tworzenie treści przez użytkowników. Kolejny przykład, to strona, taka jak portal lub witryna z wiadomościami, złożona z treści zebranych od wielu autorów lub też witryna, które automatycznie umieszcza treść pobraną z innych źródeł w danym okresie czasu, np. dynamicznie umieszczane reklamy.</p>
+      <p>W takich przypadkach w momencie opublikowania strony nie można przewidzieć, jaka dodatkowa, niekontrolowana przez autora treść pojawi się w przyszłości. Ważna jest, aby pamiętać, iż niekontrolowana treść może negatywnie wpłynąć także na dostępność treści umieszczonej przez autora. Istnieją dwa rozwiązania:</p>
+      <ol>
+        <li>
+          <p>Deklarację zgodności można oprzeć na podstawie najlepszej wiedzy posiadanej na dany moment. Oznacza to, iż strona jest zgodna, jeśli jest monitorowana i korygowana (treść niezgodna jest usuwana lub zmieniona tak, aby strona spełniała wymogi zgodności) w ciągu dwóch dni roboczych; od tego momentu można ustalać zgodność strony, wykluczając błędy w treściach zewnętrznych, które są poprawiane lub usuwane, kiedy się je napotka. Nie można złożyć deklaracji zgodności, jeśli monitorowanie lub korekta niezgodnej treści nie jest możliwa.</p>
+          <p><strong>LUB</strong></p>
+        </li>
+        <li>
+          <p>Można złożyć „Deklarację częściowej zgodności”, że strona nie jest zgodna, ale spełniałaby wymogi zgodności, gdyby pewne jej części zostały usunięte. Brzmienie takiego oświadczenia jest następujące: „a strona nie jest zgodna, ale byłaby zgodna z WCAG 2.1 na poziomie X, gdyby następujące treści z niekontrolowanych przez autora źródeł zostały usunięte”. Dodatkowo, treść niekontrolowana musi spełnić poniższe kryteria:</p>
+          <ol>
+            <li>Nie jest to treść, która jest pod kontrolą autora.</li>
+            <li>Jest opisana w sposób umożliwiający identyfikację przez użytkowników (np. nie można stwierdzić jedynie „wszystkie części, których nie kontrolujemy”, muszą być one wyraźnie oznaczone).</li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+
+    <section id="conformance-partial-lang">
+      <h2>Deklaracja częściowej zgodności – język</h2>
+      <p>„Deklaracja częściowej zgodności ze względu na język” może zostać złożona w przypadkach, kiedy dana strona nie jest zgodna, jednak mogłaby spełnić wymogi zgodności, gdyby istniało wsparcie dla dostępności wszystkich języków użytych na tej stronie. Brzmienie takiej deklaracji jest następujące: „Niniejsza strona nie jest zgodna, lecz spełniałaby wymogi WCAG 2.1 na poziomie X, gdyby istniało wsparcie dla dostępności następujących języków:”.</p>
+    </section>
+
+
+    <section id="glossary">
+      <h1>Słownik</h1>
+      <dl id="terms">
+
+<!-- A -->
+
+        <dt data-include="terms/20/alternative-for-time-based-media.html" data-include-replace="true" data-kolejnosc="alternatywa dla mediów"></dt>
+
+        <dt data-include="terms/21/motion-animation.html" data-include-replace="true" data-kolejnosc="animacja ruchowa"></dt>
+
+        <dt data-include="terms/20/audio.html" data-include-replace="true" data-kolejnosc="audio"></dt>
+
+        <dt data-include="terms/20/audio-description.html" data-include-replace="true" data-kolejnosc="audiodeskrypcja"></dt>
+
+        <dt data-include="terms/20/extended-audio-description.html" data-include-replace="true" data-kolejnosc="audiodeskrypcja rozszerzona"></dt>
+
+<!-- B -->
+
+        <dt data-include="terms/21/user-inactivity.html" data-include-replace="true" data-kolejnosc="bezczynność użytkownika"></dt>
+
+        <dt data-include="terms/20/blocks-of-text.html" data-include-replace="true" data-kolejnosc="blok tekstu"></dt>
+
+        <dt data-include="terms/20/input-error.html" data-include-replace="true" data-kolejnosc="błąd wprowadzania danych"></dt>
+
+        <dt data-include="terms/20/flash.html" data-include-replace="true" data-kolejnosc="błysk"></dt>
+
+        <dt data-include="terms/20/captcha.html" data-include-replace="true" data-kolejnosc="CAPTCHA"></dt>
+
+        <dt data-include="terms/21/target.html" data-include-replace="true" data-kolejnosc="cel"></dt>
+
+        <dt data-include="terms/20/link-purpose.html" data-include-replace="true" data-kolejnosc="cel łącza"></dt>
+
+        <dt data-include="terms/20/pure-decoration.html" data-include-replace="true" data-kolejnosc="czysto dekoracyjny"></dt>
+
+
+<!-- D -->
+        <dt data-include="terms/20/visually-customized.html" data-include-replace="true" data-kolejnosc="dostosowanie prezentacji"></dt>
+
+        <dt data-include="terms/21/single-pointer.html" data-include-replace="true" data-kolejnosc="dotyk jednopuunktowy"></dt>
+
+        <dt data-include="terms/20/large-scale.html" data-include-replace="true" data-kolejnosc="duża wielkość tekstu"></dt>
+
+
+
+        <dt data-include="terms/20/label.html" data-include-replace="true" data-kolejnosc="etykiety"></dt>
+
+
+
+        <dt data-include="terms/22/focus.html" data-include-replace="true" data-kolejnosc="fokus"></dt>
+        <dt data-include="terms/20/functionality.html" data-include-replace="true" data-kolejnosc="funkcjonalność"></dt>
+<!-- G -->
+        <dt data-include="terms/21/down-event.html" data-include-replace="true" data-kolejnosc="gdy naciskane"></dt>
+
+        <dt data-include="terms/20/general-flash-and-red-flash-thresholds.html" data-include-replace="true" data-kolejnosc="graniczne wartości"></dt>
+
+        <dt data-include="terms/20/idiom.html" data-include-replace="true" data-kolejnosc="idiom"></dt>
+
+        <dt data-include="terms/20/informative.html" data-include-replace="true" data-kolejnosc="informacyjne"></dt>
+
+        <dt data-include="terms/20/keyboard-interface.html" data-include-replace="true" data-kolejnosc="interfejs klawiaturowy"></dt>
+
+        <dt data-include="terms/20/essential.html" data-include-replace="true" data-kolejnosc="istotny"></dt>
+
+        <dt data-include="terms/20/sign-language.html" data-include-replace="true" data-kolejnosc="język migowy"></dt>
+
+        <dt data-include="terms/20/human-language.html" data-include-replace="true" data-kolejnosc="język naturalny"></dt>
+
+<!-- K -->
+        <dt data-include="terms/21/status-message.html" data-include-replace="true" data-kolejnosc="komunikat stanu"></dt>
+
+        <dt data-include="terms/20/user-interface-component.html" data-include-replace="true" data-kolejnosc="komponent interfejsu użytkownika"></dt>
+
+        <dt data-include="terms/20/specific-sensory-experience.html" data-include-replace="true" data-kolejnosc="konkretne odczucie zmysłowe"></dt>
+
+        <dt data-include="terms/20/programmatically-determined-link-context.html" data-include-replace="true" data-kolejnosc="kontekst łącza okreśłony programowo"></dt>
+
+        <dt data-include="terms/20/user-controllable.html" data-include-replace="true" data-kolejnosc="kontrolowane przez użytkownika"></dt>
+
+        <dt data-include="terms/20/mechanism.html" data-include-replace="true" data-kolejnosc="mechanizm"></dt>
+
+        <dt data-include="terms/20/blinking.html" data-include-replace="true" data-kolejnosc="migotanie"></dt>
+
+        <dt data-include="terms/20/media-alternative-for-text.html" data-include-replace="true" data-kolejnosc="multimedia alternatywne dla tekstu"></dt>
+
+
+        <dt data-include="terms/20/live.html" data-include-replace="true" data-kolejnosc="na żywo"></dt>
+
+        <dt data-include="terms/20/prerecorded.html" data-include-replace="true" data-kolejnosc="nagranie"></dt>
+
+        <dt data-include="terms/20/captions.html" data-include-replace="true" data-kolejnosc="napisy"></dt>
+
+        <dt data-include="terms/20/navigated-sequentially.html" data-include-replace="true" data-kolejnosc="nawigacja sekwencyjna"></dt>
+
+        <dt data-include="terms/20/name.html" data-include-replace="true" data-kolejnosc="nazwa"></dt>
+
+        <dt data-include="terms/20/normative.html" data-include-replace="true" data-kolejnosc="normatywny"></dt>
+
+        <!-- O -->
+
+        <dt data-include="terms/20/image-of-text.html" data-include-replace="true" data-kolejnosc="obrazy tekstu"></dt>
+
+        <dt data-include="terms/20/accessibility-supported.html" data-include-replace="true" data-kolejnosc="obsługiwana dostępność"></dt>
+
+        <dt data-include="terms/20/viewport.html" data-include-replace="true" data-kolejnosc="obszar roboczy"></dt>
+
+        <dt data-include="terms/21/region.html" data-include-replace="true" data-kolejnosc="obszar kluczowy"></dt>
+
+        <dt data-include="terms/20/ambiguous-to-users-in-general.html" data-include-replace="true" data-kolejnosc="ogólnie niejednoznaczny"></dt>
+
+        <dt data-include="terms/20/programmatically-determined.html" data-include-replace="true" data-kolejnosc="określony programowo"></dt>
+
+<!-- P -->
+        <dt data-include="terms/21/css-pixel.html" data-include-replace="true" data-kolejnosc="piksel CSS"></dt>
+
+        <dt data-include="terms/20/primary-education-level.html" data-include-replace="true" data-kolejnosc="podstawowy poziom edukacji"></dt>
+
+        <dt data-include="terms/20/context-sensitive-help.html" data-include-replace="true" data-kolejnosc="pomoc kontekstowa"></dt>
+
+        <dt data-include="terms/20/lower-secondary-education-level.html" data-include-replace="true" data-kolejnosc="poziom gimnazjalny"></dt>
+
+        <dt data-include="terms/20/correct-reading-sequence.html" data-include-replace="true" data-kolejnosc="prawidłowa kolejność odczytu"></dt>
+
+        <dt data-include="terms/20/process.html" data-include-replace="true" data-kolejnosc="procedura"></dt>
+
+        <dt data-include="terms/20/programmatically-set.html" data-include-replace="true" data-kolejnosc="programowo ustawiony"></dt>
+
+        <dt data-include="terms/20/user-agent.html" data-include-replace="true" data-kolejnosc="program użytkownika"></dt>
+
+        <dt data-include="terms/22/dragging-movement.html" data-include-replace="true" data-kolejnosc="przeciągnij i upuść"></dt>
+
+        <dt data-include="terms/20/presentation.html" data-include-replace="true" data-kolejnosc="przedstawienie"></dt>
+
+        <dt data-include="terms/21/pointer-input.html" data-include-replace="true" data-kolejnosc="punkt dotyku"></dt>
+
+        <dt data-include="terms/20/relationships.html" data-include-replace="true" data-kolejnosc="relacje"></dt>
+
+        <dt data-include="terms/20/role.html" data-include-replace="true" data-kolejnosc="rola"></dt>
+
+
+        <!-- S -->
+
+        <dt data-include="terms/20/section.html" data-include-replace="true" data-kolejnosc="sekcja"></dt>
+
+        <dt data-include="terms/20/abbreviation.html" data-include-replace="true" data-kolejnosc="skrót"></dt>
+
+        <dt data-include="terms/21/keyboard-shortcut.html" data-include-replace="true" data-kolejnosc="skróty klawiaturowe"></dt>
+
+        <dt data-include="terms/20/relied-upon.html" data-include-replace="true" data-kolejnosc="spolegliwa technologia"></dt>
+
+        <dt data-include="terms/21/state.html" data-include-replace="true" data-kolejnosc="stan"></dt>
+
+        <dt data-include="terms/20/web-page.html" data-include-replace="true"  data-kolejnosc="strona internetowa"></dt>
+
+        <dt data-include="terms/20/structure.html" data-include-replace="true" data-kolejnosc="struktura"></dt>
+
+        <dt data-include="terms/20/ascii-art.html" data-include-replace="true" data-kolejnosc="sztuka tekstowa"></dt>
+        <dt data-include="terms/20/satisfies-a-success-criterion.html" data-include-replace="true" data-kolejnosc="spełnienie kryteriów sukcesu"></dt>
+
+
+<!-- T -->
+        <dt data-include="terms/20/same-functionality.html" data-include-replace="true" data-kolejnosc="taka sama funkcjonalność"></dt>
+
+        <dt data-include="terms/20/same-relative-order.html" data-include-replace="true" data-kolejnosc="taka sama kolejność wzgledna"></dt>
+
+        <dt data-include="terms/20/technology.html" data-include-replace="true" data-kolejnosc="technologia"></dt>
+
+        <dt data-include="terms/20/assistive-technology.html" data-include-replace="true" data-kolejnosc="technologie wspomagające"></dt>
+
+        <dt data-include="terms/20/text.html" data-include-replace="true" data-kolejnosc="tekst"></dt>
+
+        <dt data-include="terms/20/text-alternative.html" data-include-replace="true" data-kolejnosc="tekst alternatywny"></dt>
+
+        <dt data-include="terms/22/cognitive-function-test.html" data-include-replace="true" data-kolejnosc="testy funkcji poznawczych"></dt>
+
+        <dt data-include="terms/20/sign-language-interpretation.html" data-include-replace="true" data-kolejnosc="tłumaczenie języka migowego"></dt>
+
+        <dt data-include="terms/20/content.html" data-include-replace="true" data-kolejnosc="treść"></dt>
+
+        <dt data-include="terms/20/non-text-content.html" data-include-replace="true" data-kolejnosc="treść nietekstowa"></dt>
+
+        <dt data-include="terms/20/supplemental-content.html" data-include-replace="true" data-kolejnosc="tresć uzupełniająca"></dt>
+
+        <dt data-include="terms/20/audio-only.html" data-include-replace="true" data-kolejnosc="tylko audio"></dt>
+
+        <dt data-include="terms/20/video-only.html" data-include-replace="true" data-kolejnosc="tylko wideo"></dt>
+
+        <dt data-include="terms/20/used-in-an-unusual-or-restricted-way.html" data-include-replace="true" data-kolejnosc="użyte w nietypowy"></dt>
+
+        <dt data-include="terms/20/conforming-alternate-version.html" data-include-replace="true" data-kolejnosc="wersja alternatywna zapewniająca zgodność"></dt>
+
+        <dt data-include="terms/20/video.html" data-include-replace="true" data-kolejnosc="wideo"></dt>
+
+        <dt data-include="terms/21/style-property.html" data-include-replace="true" data-kolejnosc="właściwość stylu"></dt>
+
+
+        <dt data-include="terms/22/focus-indication-area.html" data-include-replace="true" data-kolejnosc="wskaźnik fokusu"></dt>
+
+        <dt data-include="terms/20/contrast-ratio.html" data-include-replace="true" data-kolejnosc="współczynnik kontrastu"></dt>
+
+
+        <dt data-include="terms/20/paused.html" data-include-replace="true" data-kolejnosc="wstrzymanie"></dt>
+        <dt data-include="terms/21/wydanie-punktowe.html" data-include-replace="true" data-kolejnosc="wydanie punktowe"></dt>
+
+        <dt data-include="terms/20/real-time-event.html" data-include-replace="true" data-kolejnosc="wydarzenie w czasie rzeczywistym"></dt>
+
+        <dt data-include="terms/20/relative-luminance.html" data-include-replace="true" data-kolejnosc="względna luminancja"></dt>
+
+        <dt data-include="terms/20/emergency.html" data-include-replace="true" data-kolejnosc="zagrożenie"></dt>
+
+        <dt data-include="terms/20/conformance.html" data-include-replace="true" data-kolejnosc="zgodność"></dt>
+
+        <dt data-include="terms/21/set-of-web-pages.html" data-include-replace="true" data-kolejnosc="zestaw stron internetowych"></dt>
+
+        <dt data-include="terms/20/on-a-full-screen-window.html" data-include-replace="true" data-kolejnosc="zmaksymalizowane okno ekranu"></dt>
+
+        <dt data-include="terms/20/changes-of-context.html" data-include-replace="true" data-kolejnosc="zmiana kontekstu"></dt>
+
+        <dt data-include="terms/20/legal-commitments.html" data-include-replace="true" data-kolejnosc="zobowiązania prawne"></dt>
+
+        <dt data-include="terms/20/synchronized-media.html" data-include-replace="true" data-kolejnosc="zsynchronizowane multimedia"></dt>
+
+        <dt data-include="terms/21/up-event.html" data-include-replace="true" data-kolejnosc="zwolnienie nacisku"></dt>
+
+        <dt data-include="terms/20/jargon.html" data-include-replace="true" data-kolejnosc="żargon"></dt>
+
+
+      </dl>
+    </section>
+
+    <div data-include="input-purposes.html" data-include-replace="true"></div>
+
+    <section class="appendix" id="changelog">
+      <h2>Dziennik zmian</h2>
+      <p>W tej części przedstawiono zmiany merytoryczne wprowadzone w WCAG 2.2 w stosunku do WCAG 2.1. <a href="https://www.w3.org/WAI/WCAG21/errata/">Errata do WCAG 2.1</a> została również włączona do WCAG 2.2.</p>
+      <p>Kompletna lista <a href="https://github.com/w3c/wcag/commits/master/guidelines">historii zamian WCAG 2.2</a> jest dostępna.</p>
+      <ul>
+        <li>2019-11-10: Promoted <a href="#focus-visible">Focus Visible</a> from Level AA to Level A.</li>
+        <li>2020-01-14: Added Focus Visible (Enhanced), later renamed to <a href="#focus-appearance-enhanced">Focus Appearance (Enhanced)</a>.</li>
+        <li>2020-03-30: Added <a href="#accessible-authentication">Accessible Authentication</a>.</li>
+        <li>2020-05-27: Added <a href="#dragging">Dragging</a>.</li>
+        <li>2020-07-19: Added <a href="#findable-help">Findable Help</a>, <a href="#fixed-reference-points">Fixed Reference Points</a>, <a href="#hidden-controls">Hidden Controls</a>, <a href="#pointer-target-spacing">Pointer Target Spacing</a>, <a href="#redundant-entry">Redundant Entry</a>.</li>
+        <li>2020-08-04: Added <a href="#focus-appearance-minimum">Focus Appearance (Minimum)</a> and renamed <q>Focus Visible (Enhanced)</q> to <q>Focus Appearance (Enhanced)</q>.</li>
+      </ul>
+    </section>
+    <section class="appendix informative section" id="acknowledgements">
+      <h3>Poddziękowania</h3>
+      <p>Dodatkowe informacje na temat uczestnictwa w Grupie Roboczej Wytyczne dla Dostępności (AG WG) można znaleźć na <a href="https://www.w3.org/WAI/GL/">stronie domowej Grupy Roboczej</a>.</p>
+      <div data-include="../acknowledgements/ag-wg-active.html" data-include-replace="true"></div>
+      <div data-include="../acknowledgements/ag-contributors.html" data-include-replace="true"></div>
+      <div data-include="../acknowledgements/funders.html" data-include-replace="true"></div>
+    </section>
   </body>
 </html>
